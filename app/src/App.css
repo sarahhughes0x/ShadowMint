@@ -1,0 +1,11 @@
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  min-height: 100vh;
+  padding: 20px;
+  background: radial-gradient(circle at 20% 20%, rgba(12, 96, 255, 0.08), transparent 35%),
+    radial-gradient(circle at 80% 0%, rgba(18, 176, 248, 0.08), transparent 35%),
+    #f4f8fc;
+}
