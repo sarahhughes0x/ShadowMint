@@ -1,0 +1,148 @@
+.mint-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid rgba(12, 27, 42, 0.08);
+  box-shadow: 0 12px 40px rgba(6, 22, 45, 0.05);
+}
+
+.mint-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.mint-header h2 {
+  margin: 6px 0;
+}
+
+.next-id {
+  background: #0b1a2a;
+  color: #f7fbff;
+  border-radius: 12px;
+  padding: 12px;
+  min-width: 120px;
+  text-align: center;
+}
+
+.next-id .label {
+  display: block;
+  font-size: 12px;
+  opacity: 0.75;
+}
+
+.next-id .value {
+  display: block;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.mint-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-weight: 600;
+  color: #102338;
+}
+
+.form-label input {
+  border-radius: 10px;
+  border: 1px solid rgba(12, 27, 42, 0.15);
+  padding: 12px;
+  font-size: 15px;
+  background: #f9fbff;
+}
+
+.form-label input.error {
+  border-color: #d14343;
+}
+
+.form-error {
+  margin: 0;
+  color: #c0392b;
+  font-weight: 600;
+}
+
+.form-status {
+  margin: 0;
+  color: #0c60ff;
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.actions button {
+  border: none;
+  border-radius: 12px;
+  padding: 12px 16px;
+  background: linear-gradient(135deg, #0c60ff, #12b0f8);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.actions button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.actions button:not(:disabled):hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(12, 96, 255, 0.28);
+}
+
+.hint {
+  margin: 0;
+  color: #1d2c3c;
+  opacity: 0.75;
+}
+
+.success-panel {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 12px;
+  background: #0b1a2a;
+  color: #f7fbff;
+}
+
+.success-label {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+  margin: 0;
+  opacity: 0.7;
+}
+
+.success-title {
+  margin: 4px 0 6px;
+  font-size: 20px;
+}
+
+.success-copy {
+  margin: 0 0 10px;
+  opacity: 0.86;
+}
+
+.link {
+  color: #8bd0ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.link:hover {
+  text-decoration: underline;
+}

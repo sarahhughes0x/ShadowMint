@@ -1,0 +1,128 @@
+.shadowmint-app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 28px 0 80px;
+  color: #0c1b2a;
+}
+
+.app-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 20px;
+  padding: 24px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(36, 131, 215, 0.12), rgba(10, 65, 140, 0.08));
+  border: 1px solid rgba(12, 27, 42, 0.08);
+  box-shadow: 0 16px 50px rgba(6, 22, 45, 0.06);
+}
+
+.hero h1 {
+  margin: 6px 0 10px;
+  font-size: 32px;
+  letter-spacing: -0.5px;
+}
+
+.hero .lede {
+  margin: 0 0 14px;
+  color: #1c3552;
+  line-height: 1.5;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 12px;
+}
+
+.stat-card {
+  flex: 1;
+  background: #0b1a2a;
+  color: #f5fbff;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.stat-label {
+  display: block;
+  opacity: 0.72;
+  font-size: 12px;
+  letter-spacing: 0.4px;
+}
+
+.stat-value {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.callout {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px dashed rgba(12, 27, 42, 0.18);
+  border-radius: 14px;
+  padding: 16px;
+  backdrop-filter: blur(6px);
+}
+
+.callout-title {
+  margin: 0 0 8px;
+  font-weight: 700;
+}
+
+.callout ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #1f3550;
+  line-height: 1.6;
+}
+
+.tab-bar {
+  display: inline-flex;
+  border-radius: 12px;
+  border: 1px solid rgba(12, 27, 42, 0.08);
+  background: rgba(255, 255, 255, 0.65);
+  overflow: hidden;
+  width: fit-content;
+}
+
+.tab-button {
+  border: none;
+  background: transparent;
+  padding: 12px 18px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #1b2e45;
+  transition: all 0.2s ease;
+}
+
+.tab-button.active {
+  background: linear-gradient(135deg, #0c60ff, #12b0f8);
+  color: #ffffff;
+  box-shadow: 0 10px 25px rgba(10, 67, 175, 0.25);
+}
+
+.tab-button:not(.active):hover {
+  background: rgba(12, 27, 42, 0.04);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
+  margin: 0;
+  color: #0c60ff;
+}
+
+.lede {
+  margin: 4px 0 0;
+}
+
+@media (max-width: 920px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}
